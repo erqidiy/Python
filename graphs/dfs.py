@@ -15,7 +15,7 @@ def dfs(graph, start):
      behaviour precisely using a stack of iterators. Instead of recursively calling with a node, we'll push an iterator
       to the node's children onto the iterator stack. When the iterator at the top of the stack terminates, we'll pop
        it off the stack."""
-    explored, stack = set(), [start]
+    explored, stack = [], [start]
     while stack:
         v = (
             stack.pop()
